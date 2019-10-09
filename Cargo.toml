@@ -1,0 +1,12 @@
+[package]
+name = "serdegitfail"
+version = "0.1.0"
+authors = ["Volker Mische <volker.mische@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+# This one works
+serde = { version = "1.0.101", features = ["derive"] }
+# This one doesn't
+#serde = {git = "https://github.com/serde-rs/serde", tag = "v1.0.101", features = ["derive"]}
+serde_json = "1.0.41"
